@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Index</title>
+</head>
+<body>
+    <h1>ALL PRODUCTS</h1>
+
+    <% for (let products of product)  { %>
+        <li> <a href="/products/<%=products._id%>" > <%= products.name %> </a> </li>
+        <% } %> 
+
+        <p><a href="/products/new">New product</a></p>
+    
+</body>
+</html>
