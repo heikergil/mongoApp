@@ -10,7 +10,10 @@
     <h1>ALL PRODUCTS</h1>
 
     <% for (let products of product)  { %>
-        <li> <a href="/products/<%=products._id%>" > <%= products.name %> </a> </li>
+        <li> 
+            <a href="/products/<%=products._id%>" > <%= products.name %> 
+            </a> - <a href="/products/<%=products._id%>/edit">Edit</a> 
+        </li>
         <% } %> 
 
         <p><a href="/products/new">New product</a></p>
