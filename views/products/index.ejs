@@ -7,7 +7,7 @@
     <title>Products Index</title>
 </head>
 <body>
-    <h1>ALL PRODUCTS</h1>
+    <h1> <%= category.toUpperCase()  %>  PRODUCTS</h1>
 
     <% for (let products of product)  { %>
         <li> 
@@ -17,6 +17,8 @@
         <% } %> 
 
         <p><a href="/products/new">New product</a></p>
+
+        <a href="/products">All Products</a>
     
 </body>
 </html>
